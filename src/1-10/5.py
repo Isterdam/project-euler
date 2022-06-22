@@ -7,8 +7,7 @@ def divisble_by_all(n):
     return True
 
 i = 20
-while True:
-    if divisble_by_all(i):
-        print(i)
-        break
+while not divisble_by_all(i):
     i += 20
+
+print(i)
