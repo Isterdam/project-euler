@@ -2,7 +2,7 @@ import math
 
 def eratosthenes(n):
     primes = []
-    xs = set(x for x in range(2, n+1))
+    xs = set(i for i in range(2, n+1))
 
     while len(xs) > 0:
         p = xs.pop()
