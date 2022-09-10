@@ -5,8 +5,8 @@
 # of steps down and to the right are 40 nCr 20
 
 def fac(n):
-    if n == 1:
-        return 1
+    if n == 2:
+        return 2
     else:
         return n * fac(n-1)
 
