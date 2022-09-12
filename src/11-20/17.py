@@ -5,7 +5,7 @@ hundreds = {k*100:v+'hundred' for (k,v) in ones.items() if k < 10}
 thousands = {1000: 'onethousand'}
 nums = [thousands, hundreds, tens, ones]
 
-def numberToText(x):
+def number_to_text(x):
     written = ''
     for num in nums:
         key_list = sorted(num.keys(), reverse=True)
@@ -20,6 +20,6 @@ def numberToText(x):
 
 total = ''
 for i in range(1001):
-    total += numberToText(i)
+    total += number_to_text(i)
 
 print(len(total))
